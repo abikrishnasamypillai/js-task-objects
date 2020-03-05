@@ -1,3 +1,5 @@
+//object creation for braces
+
 const obj={
   id : 1,
   name :'Abi' ,
@@ -84,3 +86,5 @@ console.log('Gender :',gender);
 obj.setGender('F');
 gender= obj.getGender()
 console.log('Gender:',gender);
+
+//------------------------------------------------------------------------
