@@ -58,33 +58,54 @@ getGender : function()
 }
 let name=obj.getName();
 console.log('Name :',name);
+let id=obj.getId();
+console.log('Id :',id);
+let age=obj.getAge();
+console.log('Age :',age);
+let age=obj.getAge();
+console.log('Age :',age);
+let college=obj.getCollege();
+console.log('College :',college);
+let city=obj.getCity();
+console.log('City :',city);
+let gender=obj.getGender();
+console.log('Gender :',gender);
+
 obj.setName('Amri');
 name= obj.getName()
 console.log('Name :',name);
-let id=obj.getId();
-console.log('Id :',id);
 obj.setId(2);
 id= obj.getId()
 console.log('Id:',id);
-let age=obj.getAge();
-console.log('Age :',age);
 obj.setAge(20);
 age= obj.getAge()
 console.log('Age:',age);
-let college=obj.getCollege();
-console.log('College :',college);
 obj.setCollege('SECE');
 college= obj.getCollege()
 console.log('College:',college);
-let city=obj.getCity();
-console.log('City :',city);
 obj.setCity('Trichy');
 city= obj.getCity()
 console.log('City:',city);
-let gender=obj.getGender();
-console.log('Gender :',gender);
 obj.setGender('F');
 gender= obj.getGender()
 console.log('Gender:',gender);
 
 //------------------------------------------------------------------------
+
+//o9bjects creation with function
+
+function Person(id)
+{
+  this.name='abi';
+  this.setId=function(id)
+  {
+    _id=id;
+  }
+  this.getId=function()
+  {
+    return _id;
+  }
+}
+const person=new Person('10');
+person.setId(2)
+console.log(person.getId());
